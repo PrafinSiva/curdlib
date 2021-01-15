@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/stylesheets/styles.css" rel="stylesheet">
+  </head>
+  <style>
+    .file {
+  visibility: hidden;
+  position: absolute;
+}
+  </style>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/home" class="navbar-brand">Home</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for (i=0;i<nav.length;i++){%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+        </li>
+        <%}%>
+        
+        <li >
+          <a href="/">Logout</a>
+        </li>
+      
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Add new Book
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      <div class="panel">
+        <div class="panel-body">
+          <h2 style="text-align: center;">Fill up the details</h2><br>
+
+<div class="container" style="width: 50%;">
+  <form method="POST" action="/admin/add" onsubmit="return validate() && authorname() && bookgenre()">
+    <div class="form-group">
+      <label for="BookName">Title</label>
+     <input type="text" class="form-control" id="booktitle" name="title" placeholder="Enter name of book" required onchange="return validate()">
+      <label for="" id="errortitle"></label>
+    </div>
+    <div class="form-group">
+      <label for="author">Author's Name </label>
+      <input type="text" class="form-control" id="author" name="author" placeholder="Enter author's name" required onchange="return authorname()">
+      <label for="" id="errorauthor"></label>
+    </div>
+    <div class="form-group">
+      <label for="genre">Genre  </label>
+      <input type="text" class="form-control" id="genre" name="genre" placeholder="Enter genre of book" required onchange="return bookgenre()">
+      <label for="" id="errorgenre"></label>
+    </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <label class="custom-file-label" for="inputGroupFile01" >Upload an Image </label>
+
+      </div>
+      <div class="custom-file">
+
+        <input type="file" class="custom-file-input" id="inputGroupFile01" name="image"  required
+          aria-describedby="inputGroupFileAddon01" accept="image/x-png,image/gif,image/jpeg" >
+      </div>
+    </div><br>
+    <div class="text-center">
+    <button type="submit" class="btn btn-primary" style="width: 50%; text-align: center;margin-bottom: 2em;">Add Book </button>
+  </div>
+  </form>                                       
+          
+</div>
+  </div>                                                                    
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div> -->
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="text/javascript">
+  $(document).on("click", ".browse", function() {
+  var file = $(this).parents().find(".file");
+  file.trigger("click");
+});
+$('input[type="file"]').change(function(e) {
+  var fileName = e.target.files[0].name;
+  $("#file").val(fileName);
+
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    // get loaded data and render thumbnail.
+    document.getElementById("preview").src = e.target.result;
+  };
+  // read the image file as a data URL.
+  reader.readAsDataURL(this.files[0]);
+});
+</script>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function validate(){
+          var letters = /^[A-Za-z0-9 ]*$/;
+          var errortitle=document.getElementById("errortitle");
+          var booktitle=document.getElementById("booktitle");
+          if(letters.test(booktitle.value)==1){
+              errortitle.innerHTML="";
+              return true;
+          }
+          else if(letters.test(booktitle.value)==0){
+              errortitle.innerHTML="Book name should contain only letters and numbers";
+              errortitle.style.color="red";
+              return false;
+          }
+      }
+  
+      </script>
+      <script type="text/javascript">
+        function authorname(){
+            var letters = /^[A-Za-z ]*$/;
+            var errorauthor=document.getElementById("errorauthor");
+            var author=document.getElementById("author");
+            if(letters.test(author.value)==1){
+                errorauthor.innerHTML="";
+                return true;
+            }
+            else if(letters.test(author.value)==0){
+                errorauthor.innerHTML="Author's name should contain only letters";
+                errorauthor.style.color="red";
+                return false;
+            }
+        }
+    
+        </script>
+          <script type="text/javascript">
+          function bookgenre(){
+              var letters = /^[A-Za-z ]*$/;
+              var errorgenre=document.getElementById("errorgenre");
+              var genre=document.getElementById("genre");
+              if(letters.test(genre.value)==1){
+                  errorgenre.innerHTML="";
+                  return true;
+              }
+              else if(letters.test(genre.value)==0){
+                  errorgenre.innerHTML="Genre should contain only letters";
+                  errorgenre.style.color="red";
+                  return false;
+              }
+          }
+      
+          </script>
+	</body>
+</html>
